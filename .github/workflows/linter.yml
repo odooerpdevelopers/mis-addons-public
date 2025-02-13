@@ -1,0 +1,16 @@
+name: Pylint Odoo
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Listar directorios
+      - run: ls -l
+
+      - name: Version SO
+      - run: cat /etc/os-release
