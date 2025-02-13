@@ -15,9 +15,12 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: 3.12
-      
-      - name: Listar directorios
-        run: ls -l
 
-      - name: Version SO
-        run: cat /etc/os-release
+      - name: Listando repositorio
+        run: git ls-files '*py'
+      
+      - name: Analizando el código con flake8
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          pip install flake8 pylint
+          flake8 --ignore=F401 $(git ls-files '*py')
