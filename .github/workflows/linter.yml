@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Listar directorios
-      - run: ls -l
+        run: ls -l
 
       - name: Version SO
-      - run: cat /etc/os-release
+        run: cat /etc/os-release
