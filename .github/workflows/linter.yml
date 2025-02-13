@@ -9,6 +9,13 @@ jobs:
   build:
     runs-on: ubuntu-24.04
     steps:
+      - uses: actions/checkout@v4
+      # setup python 3.12
+      - name: Set Up Python 3.12
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.12
+      
       - name: Listar directorios
         run: ls -l
 
