@@ -42,7 +42,7 @@ Para agregar **Flake8** a tu proyecto, consulta la documentación oficial de [Fl
 ---
 
 ## Pre-Commit
-**[Pre-commit](https://pre-commit.com/#advanced)** es una herramienta que permite ejecutar hooks automáticamente antes de realizar un commit. Esto asegura que el código pase las pruebas de estilo y calidad antes de ser añadido al repositorio.
+**[Pre-commit](https://pre-commit.com/#intro)** es una herramienta que permite ejecutar hooks automáticamente antes de realizar un commit. Esto asegura que el código pase las pruebas de estilo y calidad antes de ser añadido al repositorio.
 
 ### Función:
 - **Automatiza la ejecución de Pylint y Flake8**: Antes de hacer un commit, se ejecutan automáticamente estas herramientas para garantizar que el código sigue las guías de estilo y no tiene errores.
@@ -186,7 +186,7 @@ Aquí tienes una lista de repositorios y recursos importantes para integrar herr
 2. **[odoo-pre-commit-hooks - Pre-commit Hooks para Odoo](https://github.com/OCA/odoo-pre-commit-hooks/tree/main)**
    - Este repositorio ofrece hooks de **Pre-commit** específicos para proyectos Odoo. Permite integrar herramientas como **Pylint** y **Flake8**, asegurando que el código cumpla con las guías de estilo de Odoo antes de hacer un commit.
 
-3. **[Pre-commit - Documentación Oficial](https://pre-commit.com/#advanced)**
+3. **[Pre-commit - Documentación Oficial](https://pre-commit.com/#intro)**
    - **Pre-commit** es una herramienta que facilita la ejecución automática de hooks de calidad de código antes de cada commit. Esta página ofrece información detallada sobre cómo usarla y configurarla en tus proyectos.
 
 4. **[Pylint-Odoo - Plugin Pylint para Odoo](https://github.com/OCA/pylint-odoo/tree/main)**
