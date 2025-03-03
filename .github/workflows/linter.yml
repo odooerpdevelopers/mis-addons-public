@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - "18.0"
+      #- "18.0"
   workflow_dispatch:
 jobs:
   build:
