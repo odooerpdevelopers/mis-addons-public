@@ -1,0 +1,13 @@
+[flake8]
+# lineas de logitud maxima 119 en python
+max-line-length = 120
+max-complexity = 17
+exclude =
+    .git,
+    __pycache__,
+    .venv,
+    venv
+ignore = E203,W503,W504,C901
+# ignora import not used error F401 en ficheros init
+per-file-ignores=
+    __init__.py:F401

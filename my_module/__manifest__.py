@@ -1,12 +1,8 @@
-"""
-Part of <oec>. See LICENSE file for full copyright and licensing details.
-"""
-
 {
     "name": "Website Slides Styles",
-    "version": "0.1",
-    "author": "Odoo ERP Cloud",
-    "website": "https://odooerpcloud.com",
+    "version": "18.0.0.0.1",
+    "author": "CampusCleverit",
+    "website": "https://campuscleverit.es",
     "category": "Website",
     "summary": """
         Add changes Elearning module
@@ -14,5 +10,6 @@ Part of <oec>. See LICENSE file for full copyright and licensing details.
     "depends": [
         "website_slides",
     ],
+    "license": "AGPL-3",
     "installable": True,
 }
