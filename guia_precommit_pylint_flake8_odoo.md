@@ -78,7 +78,7 @@ Para integrar y configurar estas herramientas en tu proyecto, sigue estos pasos:
    pip install -U pip setuptools wheel pre-commit
 
 2. **Crear los ficheros clave para pre-commit**:
-    Es necesario crear los siguientes ficheros en tu repositorio, puedes usar como base cualquier repositorio de OCA por ejemplo OCA/web
+    Es necesario crear los siguientes ficheros dentro de tu repositorio, puedes usar como base para copiar los ficheros cualquier repositorio de OCA por ejemplo OCA/web
 
     [**.pylintrc**](https://github.com/OCA/web/blob/18.0/.pylintrc)
     
@@ -88,6 +88,7 @@ Para integrar y configurar estas herramientas en tu proyecto, sigue estos pasos:
 
 3. **Ejecutar analisis pre-commit en un terminal**:
     ```bash
+    # navega hasta tu repositorio muy importante!
     pre-commit run --all-files --show-diff-on-failure --color=always
 
 4. **Guardar los cambios**:
