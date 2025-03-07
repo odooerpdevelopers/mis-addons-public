@@ -33,7 +33,7 @@ Para integrar **Pylint-Odoo** en tu proyecto, puedes seguir las instrucciones de
 
 ---
 
-## Flake8
+## Flake8 (Opcional)
 
 **[Flake8](https://github.com/PyCQA/flake8/tree/main)** es una herramienta de análisis estático que comprueba el estilo y la calidad del código Python, basada en los estándares PEP8.
 
@@ -45,6 +45,28 @@ Para integrar **Pylint-Odoo** en tu proyecto, puedes seguir las instrucciones de
 ### Configuración:
 
 Para agregar **Flake8** a tu proyecto, consulta la documentación oficial de [Flake8](https://github.com/PyCQA/flake8/tree/main) y configura las reglas personalizadas que desees.
+
+## Ruff (Predeterminado en OCA)
+
+**[Ruff](https://github.com/astral-sh/ruff)** es una herramienta de análisis estático para Python escrita en **Rust**, similar a Flake8, pero mucho más rápida y eficiente. Ruff es compatible con las reglas de PEP8 y además incluye muchas optimizaciones para mejorar el rendimiento y tiene su propio [ruff-pre-commit-hook](https://github.com/astral-sh/ruff-pre-commit) para pre-commit.
+
+### Función:
+
+- **Análisis de estilo y calidad del código**: Similar a Flake8, Ruff verifica que el código cumpla con los estándares de estilo y detecta errores y advertencias.
+Alta velocidad: Ruff es mucho más rápido que otras herramientas como Flake8, lo que lo convierte en una opción ideal para proyectos grandes.
+
+- **Compatibilidad con plugins**: Ruff es compatible con los plugins de Flake8, lo que permite aprovechar las configuraciones y extensiones que ya uses con Flake8.
+
+### Configuración:
+Para agregar **Ruff** a tu proyecto con pre-commit sigue el ejemplo de oca/web o la documentación oficial.
+Es similar a flake8, necesitar crear en la raiz de tu rfepositorio un fichero **.ruff.toml** y definir ahi las reglas.
+
+Si quieres mas información revisa la doc oficial de ruff y el plugin para pre-commit:
+
+**[Ruff](https://github.com/astral-sh/ruff)**
+
+**[ruff-pre-commit-hook](https://github.com/astral-sh/ruff-pre-commit)**
+
 
 ---
 
@@ -65,9 +87,10 @@ En el caso de proyectos Odoo, se recomienda usar los hooks de **[odoo-pre-commit
 
 ### Ejemplo de integración con OCA
 
-Si deseas ver una integración real usando **Pre-commit** en el ecosistema Odoo, puedes consultar un proyecto de OCA, como **OCA/web**. En este caso, ellos ya aplican estas librerías como parte de su flujo de trabajo CI/CD. Puedes copiar su configuración para tu propio proyecto:
+Si deseas ver una integración real usando **Pre-commit** en el ecosistema Odoo, puedes consultar un proyecto de OCA, como [**OCA/web**](https://github.com/OCA/web/blob/18.0). En este caso, ellos ya aplican estas librerías como parte de su flujo de trabajo CI/CD. Puedes copiar su configuración para tu propio proyecto:
 
 - [**.pylintrc**](https://github.com/OCA/web/blob/18.0/.pylintrc)
+- [**.ruff.toml**](https://github.com/OCA/web/blob/18.0/.ruff.toml)
 - [**.pylintrc-mandatory**](https://github.com/OCA/web/blob/18.0/.pylintrc-mandatory)
 - [**.pre-commit-config.yaml**](https://github.com/OCA/web/blob/18.0/.pre-commit-config.yaml)
 
@@ -95,6 +118,8 @@ Para integrar y configurar estas herramientas en tu proyecto, sigue estos pasos:
    Es necesario crear los siguientes ficheros dentro de tu repositorio, puedes usar como base para copiar los ficheros cualquier repositorio de OCA por ejemplo OCA/web
 
    [**.pylintrc**](https://github.com/OCA/web/blob/18.0/.pylintrc)
+
+   [**.ruff.toml**](https://github.com/OCA/web/blob/18.0/.ruff.toml)
 
    [**.pylintrc-mandatory**](https://github.com/OCA/web/blob/18.0/.pylintrc-mandatory)
 
@@ -182,8 +207,8 @@ Para integrar y configurar estas herramientas en tu proyecto, sigue estos pasos:
 
 ```bash
 [flake8]
-# lineas de logitud maxima 79 en python
-max-line-length = 79
+# lineas de logitud maxima 119 en python
+max-line-length = 119
 max-complexity = 17
 exclude =
     .git,
