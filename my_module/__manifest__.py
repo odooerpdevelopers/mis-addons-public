@@ -1,6 +1,9 @@
+"""
+example of __manifest__.py file"""
+
 {
     "name": "Website Slides Styles",
-    "version": "18.0.0.0.1",
+    "version": "0.1",
     "author": "CampusCleverit",
     "website": "https://campuscleverit.es",
     "category": "Website",
