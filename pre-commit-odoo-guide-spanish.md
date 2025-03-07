@@ -1,6 +1,6 @@
-# Guía para el uso de Pre-Commit + Pylint Odoo + Flake8 en proyectos de Odoo
+# Automatiza el control de código de tus Odoo Apps con Pre-Commit
 
-Este README proporciona una breve descripción de las herramientas **Pylint**, **Flake8** y **Pre-commit**, junto con sus configuraciones recomendadas para usarlas en proyectos Odoo. Estas herramientas ayudan a mejorar la calidad del código al asegurar que se sigan las mejores prácticas de codificación, evitar errores comunes, y garantizar que el código se ajuste a las guías de estilo específicas de Odoo.
+Este README proporciona una guia para configurar **pre-commit** y otras erramientas como  **Pylint Odoo** **Ruff Formater** **eslint**, etc. junto con sus configuraciones recomendadas para usarlas en proyectos Odoo. Estas herramientas ayudan a mejorar la calidad del código al asegurar que se sigan las mejores prácticas de codificación, evitar errores comunes, y garantizar que el código se ajuste a las guías de estilo específicas de Odoo.
 
 Además, te explicamos cómo aplicar reglas y estilos personalizados de Odoo mediante **Pylint-Odoo** y **odoo-pre-commit-hooks**, que son complementos de las librerías oficiales de Pylint y Pre-commit, pero con reglas y guías específicas para el desarrollo de módulos Odoo.
 
