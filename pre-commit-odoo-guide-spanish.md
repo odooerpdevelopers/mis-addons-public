@@ -1,6 +1,6 @@
 # Automatiza el control de código de tus Odoo Apps con Pre-Commit
 
-Este README proporciona una guia para configurar **pre-commit** y otras erramientas como  **Pylint Odoo** **Ruff Formater** **eslint**, etc. junto con sus configuraciones recomendadas para usarlas en proyectos Odoo. Estas herramientas ayudan a mejorar la calidad del código al asegurar que se sigan las mejores prácticas de codificación, evitar errores comunes, y garantizar que el código se ajuste a las guías de estilo específicas de Odoo.
+Este README proporciona una guia para configurar **pre-commit** y otras erramientas como **Pylint Odoo** **Ruff Formater** **eslint**, etc. junto con sus configuraciones recomendadas para usarlas en proyectos Odoo. Estas herramientas ayudan a mejorar la calidad del código al asegurar que se sigan las mejores prácticas de codificación, evitar errores comunes, y garantizar que el código se ajuste a las guías de estilo específicas de Odoo.
 
 Además, te explicamos cómo aplicar reglas y estilos personalizados de Odoo mediante **Pylint-Odoo** y **odoo-pre-commit-hooks**, que son complementos de las librerías oficiales de Pylint y Pre-commit, pero con reglas y guías específicas para el desarrollo de módulos Odoo.
 
@@ -53,11 +53,12 @@ Para agregar **Flake8** a tu proyecto, consulta la documentación oficial de [Fl
 ### Función:
 
 - **Análisis de estilo y calidad del código**: Similar a Flake8, Ruff verifica que el código cumpla con los estándares de estilo y detecta errores y advertencias.
-Alta velocidad: Ruff es mucho más rápido que otras herramientas como Flake8, lo que lo convierte en una opción ideal para proyectos grandes.
+  Alta velocidad: Ruff es mucho más rápido que otras herramientas como Flake8, lo que lo convierte en una opción ideal para proyectos grandes.
 
 - **Compatibilidad con plugins**: Ruff es compatible con los plugins de Flake8, lo que permite aprovechar las configuraciones y extensiones que ya uses con Flake8.
 
 ### Configuración:
+
 Para agregar **Ruff** a tu proyecto con pre-commit sigue el ejemplo de oca/web o la documentación oficial.
 Es similar a flake8, necesitar crear en la raiz de tu rfepositorio un fichero **.ruff.toml** y definir ahi las reglas.
 
@@ -66,7 +67,6 @@ Si quieres mas información revisa la doc oficial de ruff y el plugin para pre-c
 **[Ruff](https://github.com/astral-sh/ruff)**
 
 **[ruff-pre-commit-hook](https://github.com/astral-sh/ruff-pre-commit)**
-
 
 ---
 

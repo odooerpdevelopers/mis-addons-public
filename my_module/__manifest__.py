@@ -1,9 +1,6 @@
-"""
-example of __manifest__.py file"""
-
 {
     "name": "Website Slides Styles",
-    "version": "0.1",
+    "version": "18.0.0.0.1",
     "author": "CampusCleverit",
     "website": "https://campuscleverit.es",
     "category": "Website",
@@ -13,5 +10,6 @@ example of __manifest__.py file"""
     "depends": [
         "website_slides",
     ],
+    "license": "AGPL-3",
     "installable": True,
 }
