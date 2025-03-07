@@ -5,7 +5,7 @@
     "website": "https://campuscleverit.es",
     "category": "Website",
     "summary": """
-        Add changes Elearning module
+        Add  custom deescription html field to slide channel (Course),
     """,
     "depends": [
         "website_slides",
